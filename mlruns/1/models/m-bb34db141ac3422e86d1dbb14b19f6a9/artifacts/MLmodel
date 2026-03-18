@@ -1,0 +1,23 @@
+artifact_path: file:C:/Users/Kartik/OneDrive/Desktop/1/mlruns/1/models/m-bb34db141ac3422e86d1dbb14b19f6a9/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.13.3
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.8.0
+    skops_trusted_types: null
+mlflow_version: 3.10.1
+model_id: m-bb34db141ac3422e86d1dbb14b19f6a9
+model_size_bytes: 2029
+model_uuid: m-bb34db141ac3422e86d1dbb14b19f6a9
+prompts: null
+run_id: b6ead18af1074704ad730fc7fc47bdf1
+utc_time_created: '2026-03-18 05:27:10.260116'
