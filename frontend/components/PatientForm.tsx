@@ -47,7 +47,7 @@ export default function PatientForm({ onResult }: { onResult: (r: any) => void }
     setLoading(true)
     setError('')
     try {
-      const res = await fetch('http://localhost:8000/predict', {
+      const res = await fetch('https://Kartik095.pythonanywhere.com/predict', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form),

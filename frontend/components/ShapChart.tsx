@@ -23,7 +23,7 @@ export default function ShapChart({ features }: { features: Feature[] }) {
           <CartesianGrid strokeDasharray="3 3" horizontal={false} />
           <XAxis type="number" tick={{ fontSize: 12 }} />
           <YAxis type="category" dataKey="name" tick={{ fontSize: 12 }} width={130} />
-          <Tooltip formatter={(value: number) => [value.toFixed(3), 'SHAP Value']} />
+          <Tooltip formatter={(value: any) => [Number(value).toFixed(3), 'SHAP Value']} />
           <Bar dataKey="value" radius={[0, 4, 4, 0]}>
             {data.map((entry, index) => (
               <Cell key={index} fill={entry.direction === 'increases_risk' ? '#ef4444' : '#22c55e'} />
